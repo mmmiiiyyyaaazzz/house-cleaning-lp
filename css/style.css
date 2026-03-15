@@ -1,0 +1,1912 @@
+/* =========================
+RESET
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+overflow-x:hidden;
+}
+
+
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+body{
+font-family:
+"Helvetica Neue",
+Arial,
+"Hiragino Kaku Gothic ProN",
+"Hiragino Sans",
+Meiryo,
+sans-serif;
+
+line-height:1.7;
+color:#333;
+
+
+}
+
+
+
+/* =========================
+SECTION 共通
+========================= */
+
+section{
+padding:80px 20px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+}
+
+h1{
+font-size:36px;
+margin-bottom:20px;
+}
+
+h2{
+font-size:28px;
+text-align:center;
+margin-bottom:40px;
+}
+
+p{
+margin-bottom:15px;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+
+
+.header{
+  background:#fff;
+  padding:18px 36px;
+
+  position:sticky;
+  top:0;
+  z-index:100;
+
+  box-shadow:0 3px 14px rgba(0,0,0,0.08);
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+
+.header .container{
+  max-width:1200px;
+  margin:0 auto;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+}
+
+/* 左：ロゴ */
+.logo{
+  margin:0;
+  font-size:32px;
+  font-weight:900;
+  letter-spacing:0.04em;
+  color:#1f1f1f;
+  line-height:1.15;
+}
+
+.logo-sub{
+  display:inline-block;
+  margin-left:10px;
+  padding:6px 10px;
+
+  font-size:18px;
+  font-weight:800;
+  letter-spacing:0.06em;
+
+  color:#111;
+  background:#ffe600;
+  vertical-align:middle;
+}
+
+/* 右：TEL + CTA */
+.header-right{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:14px;
+}
+
+.header-tel{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  line-height:1.05;
+}
+
+.tel-note{
+  font-size:18px;
+  font-weight:800;
+  letter-spacing:0.08em;
+  color:#666;
+}
+
+.tel-num{
+  font-size:34px;
+  font-weight:900;
+  letter-spacing:0.04em;
+  color:#1f1f1f;
+  text-decoration:none;
+}
+
+.tel-num:hover{
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  text-underline-offset:3px;
+}
+
+/* CTA */
+.header-cta{
+  background:#FFC107;
+  color:#000;
+
+  font-size:20px;
+  font-weight:900;
+  letter-spacing:0.04em;
+
+  padding:14px 26px;
+  border-radius:999px;
+
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  box-shadow:0 6px 14px rgba(0,0,0,0.12);
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.header-cta:hover{
+  background:#ffb300;
+  transform:translateY(-2px);
+  box-shadow:0 10px 18px rgba(0,0,0,0.16);
+}
+
+
+
+/* ===============================
+FV
+=============================== */
+
+.fv{
+background-image:url("../img/fv-house-cleaning.png");
+background-size:cover;
+background-position:35% center;
+padding:140px 20px 120px;
+position:relative;
+}
+
+/* 窓の白さを抑える */
+
+.fv::before{
+content:"";
+position:absolute;
+inset:0;
+
+background:linear-gradient(
+90deg,
+rgba(255,255,255,0.58) 0%,
+rgba(255,255,255,0.40) 35%,
+rgba(255,255,255,0.15) 65%,
+rgba(255,255,255,0) 100%
+);
+}
+
+.fv-inner{
+position:relative;
+max-width:1400px;
+margin:0 auto;
+padding-left: 20px;
+}
+
+
+
+/* ===============================
+エリア
+=============================== */
+
+.fv-area{
+display:inline-block;
+background:#f5e55a;
+color:#000;
+font-weight:700;
+font-size:18px;
+padding:8px 16px;
+margin-bottom:20px;
+}
+
+
+/* ===============================
+キャッチコピー
+=============================== */
+
+/* ===== キャッチ全体 ===== */
+
+.fv-catch{
+display:block;
+
+font-weight:900;
+line-height:1.1;
+
+margin-bottom:20px;
+
+}
+
+
+/* 1行目 */
+
+.fv-catch-top{
+
+display:block;
+
+font-size:36px;
+color:#333;
+
+margin-bottom:16px;
+
+}
+
+
+/* 2行目 */
+
+.fv-catch-main{
+
+display:block;
+
+font-size:70px;
+color:#333;
+
+letter-spacing:0.02em;
+
+}
+
+
+/* 強調 */
+
+.fv-catch-accent{
+
+display:inline-block;
+
+font-size:96px;
+
+font-weight:900;
+
+color:#2b6ff5;
+
+line-height:1.1;
+
+margin-top:6px;
+
+background:linear-gradient(
+transparent 70%,
+#ffe600 70%
+);
+
+padding:0 10px;
+}
+
+
+/* ===============================
+サブコピー
+=============================== */
+
+.fv-lead{
+
+max-width:560px;
+
+font-size:20px;
+font-weight: 500;
+
+line-height:1.7;
+
+margin-top:18px;
+}
+
+/* ===============================
+安心ポイント
+=============================== */
+
+.fv-points{
+
+display:grid;
+grid-template-columns:repeat(2, auto);
+gap:10px 28px;
+max-width:540px;
+
+list-style:none;
+
+}
+
+.fv-points li{
+font-size:26px;
+font-weight:600;
+position:relative;
+
+padding-left:38px;
+align-items:center;
+display:flex;
+
+}
+
+/* 丸チェック */
+
+.fv-points li::before{
+
+content:"✓";
+
+position:absolute;
+left:0;
+
+width:26px;
+height:26px;
+
+background:#FFD500;
+color:#fff;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:18px;
+font-weight:700;
+
+line-height:1;
+
+}
+
+
+
+.fv-points strong{
+
+font-weight:800;
+font-size: 38px;
+margin-left:6px;
+display:inline-block;
+position:relative;
+top:-4px;
+}
+
+
+/* ===============================
+価格
+=============================== */
+
+.fv-price{
+
+font-size:120px;
+
+font-weight:900;
+
+color:#ff2d2d;
+
+margin-top:0;
+margin-bottom: 0;
+
+letter-spacing:1px;
+}
+
+
+
+.fv-price span{
+font-size:26px;
+margin-right:6px;
+}
+
+
+/* ===============================
+CTA
+=============================== */
+
+.cta-btn{
+display:inline-block;
+background:#ffcc00;
+color:#000;
+font-weight:800;
+font-size:22px;
+letter-spacing: 0.03em;
+padding:18px 42px;
+border-radius:50px;
+text-decoration:none;
+
+box-shadow:0 6px 0 #d6a900;
+
+transition:all .2s;
+}
+
+.cta-btn:hover{
+transform:translateY(2px);
+box-shadow:0 3px 0 #d6a900;
+}
+
+
+/* ===============================
+補足
+=============================== */
+
+.fv-note{
+margin-top:14px;
+font-size:15px;
+color:#555;
+padding-left: 24px;
+}
+
+
+/* =========================
+CTA BUTTON
+========================= */
+
+.cta-btn{
+display:inline-block;
+background:#FFC107;
+color:#000;
+padding:16px 32px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+margin-top:20px;
+transition:.3s;
+}
+
+.cta-btn:hover{
+opacity:0.9;
+}
+
+
+/* =========================
+PROBLEM
+========================= */
+
+.problems{
+
+padding:110px 20px;
+
+background-image:url("../img/house-cleaning-bubble-bg.png");
+background-size:cover;
+background-position:center;
+
+}
+
+.problems h2{
+
+font-size:48px;
+text-align:center;
+margin-bottom:70px;
+font-weight:800;
+
+}
+
+
+/* カード並び */
+
+.problem-list{
+
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+
+}
+
+
+/* カード */
+
+.problem{
+
+width:300px;
+
+}
+
+
+/* =========================
+吹き出し（修正版）
+========================= */
+
+.problem-balloon{
+
+position:relative;
+
+background:#fff;
+
+border:1px solid #dfe6ec;
+
+padding:20px 24px;
+
+border-radius:40px;
+
+font-size:26px;
+font-weight:700;
+line-height:1.5;
+
+margin-bottom:18px;
+
+/* 柔らかい枠 */
+border:1px solid #d6dee5;
+
+box-shadow:
+0 10px 24px rgba(0,0,0,0.08),
+0 0 0 4px rgba(223,230,236,0.25);
+
+}
+
+
+/* 吹き出しトゲ（枠） */
+
+.problem-balloon::after{
+
+content:"";
+
+position:absolute;
+
+right:40px;
+
+width:0;
+height:0;
+
+border-left:12px solid transparent;
+border-right:12px solid transparent;
+border-top:12px solid #d6dee5;
+
+bottom:-12px;
+
+z-index:1;
+}
+
+
+/* 吹き出しトゲ（中身） */
+
+.problem-balloon::before{
+
+content:"";
+
+position:absolute;
+
+right:40px;
+
+width:0;
+height:0;
+
+border-left:12px solid transparent;
+border-right:12px solid transparent;
+border-top:12px solid #ffffff;
+
+bottom:-11px;
+
+z-index:2;
+}
+
+/* 番号 */
+
+.problem-no{
+
+display:block;
+
+font-size:24px;
+font-weight:800;
+
+color:#FFC107;
+
+margin-bottom:6px;
+
+}
+
+
+/* 画像 */
+
+.problem-img{
+
+height:240px;
+
+overflow:hidden;
+
+box-shadow:0 16px 35px rgba(0,0,0,0.17);
+
+}
+
+.problem-img img{
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+box-shadow:0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* =========================
+solution
+========================= */
+
+.solution{
+background:#f5f9fc;
+padding:80px 0;
+text-align:center;
+}
+
+.solution h2{
+font-size:48px;
+margin-bottom:24px;
+}
+
+.solution-lead{
+max-width:640px;
+margin:0 auto 60px;
+line-height:1.8;
+font-size:17px;
+color:#555;
+}
+
+
+/* =========================
+カードリスト
+========================= */
+
+.solution-list{
+list-style:none;
+display:grid;
+grid-template-columns:repeat(3,300px);
+gap:40px;
+justify-content:center;
+padding:0;
+margin:0 auto;
+}
+
+
+
+
+/* =========================
+solution カード
+========================= */
+
+.solution-item{
+
+padding:40px 32px;
+
+border-radius:16px;
+
+background-color:#fff;
+
+/* ぷっくりカード影 */
+
+box-shadow:
+0 6px 12px rgba(0,0,0,0.06),
+0 18px 30px rgba(0,0,0,0.08);
+
+background-image:url("../img/bubble-card-bg.png");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+
+text-align:center;
+
+position:relative;
+overflow:hidden;
+
+}
+
+.solution-item::after{
+
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+height:1px;
+
+background:rgba(255,255,255,0.9);
+
+}
+
+.solution-item::before{
+content:"";
+position:absolute;
+inset:0;
+
+background-image:url("../img/bubble-card-bg.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+opacity:0.2;
+
+pointer-events:none;
+}
+
+
+.solution-item h3{
+font-size:23px;
+font-weight: 700;
+margin-bottom:14px;
+}
+
+
+.solution-item p{
+max-width:260px;
+margin:0 auto;
+font-size:18px;
+line-height:1.7;
+color:#666;
+text-align: left;
+padding-left:6px;
+}
+
+/* =========================
+REASON
+========================= */
+
+.reason{
+
+padding:120px 20px;
+
+background:#eef6fc;
+
+text-align:center;
+
+}
+
+.reason h2{
+
+font-size:48px;
+
+margin-bottom:24px;
+
+}
+
+/* 青ブロック */
+
+.reason-inner{
+
+max-width:980px;
+
+margin:0 auto;
+
+background:linear-gradient(
+180deg,
+#3f84c9 0%,
+#2f73b7 100%
+);
+
+padding:60px 50px;
+border-radius: 8px;
+
+}
+
+/* カードレイアウト */
+
+.reason-list{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:30px;
+
+}
+
+/* カード */
+
+.reason-item{
+
+display:flex;
+align-items:center;
+gap:20px;
+
+background:#ffffff;
+
+padding:26px 28px;
+
+border-radius:14px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,0.18),
+0 2px 6px rgba(0,0,0,0.08);
+
+
+}
+
+.reason-item img{
+
+width:95px;
+flex-shrink:0;
+
+}
+
+.reason-item h3{
+
+font-size:28px;
+font-weight:700;
+
+margin:0;
+
+}
+
+.reason-lead{
+
+text-align:center;
+font-size:28px;
+
+opacity:0.9;
+
+margin:0 auto 20px;
+
+max-width:620px;
+line-height:1.7;
+
+}
+
+.reason-note{
+
+margin-top:40px;
+
+font-size:20px;
+
+color:#ffffff;
+
+opacity:0.85;
+
+text-align:center;
+
+letter-spacing:0.04em;
+
+}
+
+
+/* =========================
+service
+========================= */
+.services{
+background-image:url("../img/house-cleaning-bubble-bg.png");
+background-size:cover;
+background-position:center;
+
+padding:80px 0;
+text-align:center;
+
+}
+.services h2 {
+  font-size: 48px;
+}
+.service-list{
+
+max-width:980px;
+margin:0 auto;
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:34px;
+
+}
+
+.service{
+
+background:#ffffff;
+
+padding:40px 24px;
+
+border-radius:14px;
+border:1px solid #e6e9ee;
+
+box-shadow:
+0 8px 20px rgba(0,0,0,0.08),
+0 2px 6px rgba(0,0,0,0.05);
+
+transition:.2s;
+
+}
+
+.service:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 16px 32px rgba(0,0,0,0.14),
+0 4px 10px rgba(0,0,0,0.08);
+
+}
+
+.service img{
+width:190px;
+margin:0 auto 18px;
+}
+
+.service p{
+font-size: 32px;
+font-weight:600;
+margin:0;
+}
+
+.services-lead{
+max-width:720px;
+margin:16px auto 50px;
+font-size:20px;
+line-height:1.8;
+color:#444;
+}
+
+
+/* =========================
+BEFORE AFTER
+========================= */
+
+.before-after{
+background:#f7f9fc;
+text-align:center;
+}
+
+.before-after h2{
+font-size:48px;
+font-weight:700;
+margin-bottom:70px;
+}
+
+.ba-item{
+margin-bottom:70px;
+}
+
+.ba-item h3{
+font-size:32px;
+margin-bottom:20px;
+font-weight:700;
+}
+
+.ba-images{
+display:flex;
+align-items:center;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.ba-box{
+position:relative;
+}
+
+.ba-box img{
+max-width:435px;
+width:100%;
+border-radius:10px;
+box-shadow:0 6px 16px rgba(0,0,0,0.18);
+}
+
+/* ラベル */
+
+.ba-label{
+position:absolute;
+top:12px;
+left:12px;
+padding:6px 12px;
+font-size:28px;
+font-weight:bold;
+border-radius:4px;
+color:#fff;
+}
+
+.ba-label.before{
+background:#888;
+}
+
+.ba-label.after{
+background:#2eaf55;
+color:#fff;
+font-weight:700;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* 矢印 */
+
+.ba-arrow{
+font-size:46px;
+font-weight:900;
+color:#FFC107;
+}
+
+/* 説明文 */
+
+.ba-text{
+max-width:720px;
+margin:18px auto 0;
+font-size:20px;
+line-height:1.8;
+color:#444;
+}
+
+/* =========================
+PRICE
+========================= */
+
+.price{
+position:relative;
+padding:80px 0;
+background:#fff;
+}
+
+.price::before{
+content:"";
+position:absolute;
+inset:0;
+background-image:url("../img/house-cleaning-bubble-bg.png");
+background-size:cover;
+background-position:center;
+opacity:0.35;
+pointer-events:none;
+}
+
+.price > *{
+position:relative;
+z-index:1;
+}
+
+.price h2{
+text-align:center;
+font-size:50px;
+font-weight:700;
+margin-bottom:50px;
+}
+
+/* ここが重要 */
+
+.price-list{
+max-width:980px;
+margin:0 auto;
+background:#fff;
+border-radius:14px;
+box-shadow:0 6px 16px rgba(0,0,0,0.06);
+border:1px solid #eee;
+list-style:none;
+overflow:hidden;
+}
+
+.price-list li{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:32px 38px;
+border-bottom:1px solid #eee;
+font-size:38px;
+font-weight: 600;
+}
+
+.price-list li:last-child{
+border:none;
+}
+
+.price-list strong{
+font-size:38px;
+font-weight:800;
+color:#222;
+}
+
+.price-list li:hover{
+background:rgba(0,0,0,0.03);
+transition:0.2s;
+}
+
+
+/* =========================
+FLOW
+========================= */
+
+.flow{
+background:#f5f9fd;
+padding:80px 0;
+}
+
+.flow .inner{
+max-width:980px;
+margin:auto;
+}
+
+/* リスト */
+
+.flow-list{
+display:flex;
+flex-direction:column;
+gap:18px;
+margin-top:40px;
+}
+
+/* STEP */
+
+.step{
+display:grid;
+grid-template-columns:268px 78px 1fr;
+align-items:center;
+
+padding:20px 28px;
+
+background:#fff;
+border-radius:10px;
+
+box-shadow:0 6px 16px rgba(0,0,0,0.05);
+}
+
+/* STEPバッジ */
+
+.step-num{
+background:#e6f4ff;
+color:#1c7ed6;
+
+padding:8px 16px;
+border-radius:6px;
+
+font-size:36px;
+font-weight:700;
+
+width:fit-content;
+}
+
+/* icon */
+
+.step img{
+width:64px;
+}
+
+/* text */
+
+.step-text{
+display:flex;
+align-items:center;
+gap:24px;
+}
+
+/* title */
+
+.step-title{
+font-weight:700;
+font-size:42px;
+}
+
+/* sub */
+
+.step-sub{
+color:#777;
+font-size:20px;
+}
+
+.flow h2{
+font-size:48px;
+font-weight:700;
+text-align:center;
+}
+
+
+/* =========================
+RESULT
+========================= */
+
+.result{
+padding:100px 0;
+background:#2f80c8;
+color:#fff;
+}
+
+.result .inner{
+max-width:980px;
+margin:auto;
+}
+
+/* 横レイアウト */
+
+.result-box{
+display:grid;
+grid-template-columns:56% 44%;
+align-items:center;
+
+gap:60px;
+
+margin-top:40px;
+}
+
+/* 画像 */
+
+.result img{
+width:100%;
+display:block;
+
+border-radius:8px;
+box-shadow:0 12px 30px rgba(0,0,0,0.08);
+filter:contrast(1.1) saturate(1.05);
+}
+
+/* テキスト */
+
+.result-content{
+text-align:left;
+}
+
+/* ラベル */
+
+.result-label{
+font-size:38px;
+font-weight: 700;
+color:#fff;
+margin-bottom:0;
+line-height:1.2;
+}
+
+/* 実績数字 */
+
+.result-num{
+font-size:64px;
+font-weight:800;
+color:#e6c45a;
+margin-top: 0;
+margin-bottom:30px;
+display:inline-block;
+line-height:1.1;
+}
+
+/* リスト */
+
+.result-list{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.result-list li{
+font-size:32px;
+margin-bottom:8px;
+font-weight: 600;
+color:#fff;
+}
+
+.result-list li::before{
+content:"✓";
+color:#ffd45c;
+font-weight:bold;
+margin-right:8px;
+}
+
+.result h2 {
+  font-size: 48px;
+}
+
+/* =========================
+口コミ
+========================= */
+
+.review{
+
+  padding:120px 0 110px;
+
+  background:
+  linear-gradient(
+  to bottom,
+  rgba(255,255,255,0.55) 0%,
+  rgba(255,255,255,0.35) 120px,
+  rgba(255,255,255,0.15) 200px
+  ),
+  url("../img/review-bg-sparkle-gold.png");
+
+  background-size:cover;
+  background-position:center;
+
+}
+
+
+.review .inner{
+
+  max-width:980px;
+  margin:0 auto;
+
+}
+
+
+.review h2{
+
+  text-align:center;
+  font-size:48px;
+  font-weight:700;
+  margin-bottom:60px;
+
+}
+
+
+/* グリッド */
+
+.review-list{
+
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:32px;
+
+}
+
+
+/* カード */
+
+.review-item{
+
+  background:#fffefb;
+
+  border-radius:18px;
+
+  padding:30px 28px 12px;
+
+  border:1px solid #e3e3e3;
+
+  box-shadow:
+  0 14px 34px rgba(0,0,0,0.08),
+  0 4px 10px rgba(0,0,0,0.04);
+
+}
+
+/* 吹き出し */
+
+.review-bubble{
+  position:relative;
+  background:#ffffff;
+  border-radius:14px;
+  padding:18px 16px;
+  margin-bottom:16px;
+
+  border:1px solid #e8e8e8;
+
+  box-shadow:
+  0 8px 18px rgba(0,0,0,0.06),
+  0 3px 6px rgba(0,0,0,0.04);
+}
+
+
+/* 吹き出しトゲ */
+
+.review-bubble::after{
+
+  content:"";
+  position:absolute;
+
+  left:64%;
+  bottom:-8px;
+
+  width:14px;
+  height:14px;
+
+  background:#ffffff;
+
+  border-right:1px solid #e8e8e8;
+  border-bottom:1px solid #e8e8e8;
+
+  transform:rotate(45deg);
+
+}
+
+
+/* 星 */
+
+.review-stars{
+
+  margin:18px 0 8px;
+
+  font-size:20px;
+  letter-spacing:2px;
+  color:#d4af37;
+
+  display:flex;
+  justify-content:center;
+
+}
+
+
+/* アイコン＋名前 */
+
+.review-user{
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+
+}
+
+.review-user img{
+
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  object-fit:cover;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+
+}
+
+
+.review-name{
+
+  font-size:18px;
+  font-weight:700;
+  color:#555;
+
+}
+
+
+
+
+
+/* =========================
+GUARANTEE
+========================= */
+
+.guarantee{
+background:#ffffff;
+padding:100px 20px 110px;
+border-top:1px solid #eee;
+}
+
+.guarantee .inner{
+max-width:980px;
+margin:0 auto;
+text-align:center;
+}
+
+.guarantee h2{
+font-size:48px;
+font-weight:700;
+}
+
+.guarantee-lead{
+font-size:24px;
+margin-top:18px;
+margin-bottom:60px;
+}
+
+.guarantee-list{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:34px;
+margin-top:60px;
+}
+
+.guarantee-item{
+background:#ffffff;
+padding:40px 28px 36px;
+border-radius:16px;
+border:2px solid #f3f3f3;
+box-shadow:0 18px 40px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.guarantee-item img{
+width:84px;
+display:block;
+margin:0 auto 20px;
+}
+
+.guarantee-item h3{
+font-size:26px;
+margin-bottom:14px;
+}
+
+.guarantee-item p{
+font-size:17px;
+line-height:1.7;
+text-align: left;
+margin: 0 auto;
+}
+
+/* =========================
+FAQ
+========================= */
+
+.faq{
+background:#f5f9fd;
+padding:100px 20px;
+text-align:center;
+}
+
+.faq h2 {
+  font-size: 48px;
+}
+.faq .inner{
+max-width:980px;
+margin:0 auto;
+}
+
+.faq dl{
+max-width:980px;
+margin:40px auto 0;
+background:#fff;
+padding:40px;
+border-radius:6px;
+box-shadow:0 10px 28px rgba(0,0,0,0.08);
+text-align:left;
+}
+
+.faq dt{
+font-weight:700;
+margin-top:0;
+position:relative;
+padding-left:52px;
+font-size: 26px;
+}
+
+.faq dt:first-child{
+margin-top:0;
+}
+
+.faq dt::before{
+content:"Q";
+position:absolute;
+left:0;
+top:0;
+width:40px;
+height:40px;
+background:#2f80c3;
+color:#fff;
+font-size:24px;
+font-weight:700;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+}
+
+.faq dd{
+margin-left:0;
+margin-top:4px;
+margin-bottom:30px;
+padding-left:52px;
+line-height:1.7;
+position:relative;
+font-size: 20px;
+}
+
+.faq dd:last-of-type{
+margin-bottom:0;
+}
+
+.faq dd::before{
+content:"A";
+position:absolute;
+left:0;
+top:0;
+width:40px;
+height:40px;
+background:#79c9e8;
+color:#fff;
+font-size:24px;
+font-weight:700;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+}
+
+
+/* =========================
+AREA
+========================= */
+
+.area{
+
+background:linear-gradient(
+180deg,
+#ffffff 0%,
+#eaf6ff 60%,
+#dff0ff 100%
+);
+
+padding:110px 20px;
+
+}
+
+.area-inner{
+
+max-width:980px;
+margin:auto;
+
+}
+
+.area h2{
+font-size: 48px;
+text-align:center;
+margin-bottom:60px;
+
+}
+
+.area-content{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+
+}
+
+/* MAP */
+
+.area-map img{
+
+width:100%;
+height:auto;
+
+border-radius:10px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+/* TEXT */
+
+.area-title{
+
+font-size:36px;
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+/* エリアラベル */
+
+.area-tags{
+
+display:grid;
+grid-template-columns:repeat(4,auto);
+gap:10px;
+
+margin-bottom:10px;
+
+}
+
+.area-tags li{
+
+list-style:none;
+
+padding:6px 14px;
+
+background:#fff;
+border:2px solid #2f80c3;
+
+border-radius:20px;
+
+font-size:24px;
+text-align:center;
+font-weight: 600;
+
+}
+
+/* NOTE */
+
+.area-note{
+
+font-size:13px;
+color:#666;
+
+}
+
+
+/* =========================
+CTA SECTION
+========================= */
+
+/* =========================
+CTA
+========================= */
+
+.cta{
+
+
+background-image:url("../img/house-cleaning-bubble-bg.png");
+background-size:cover;
+background-position:center;
+padding:120px 20px;
+text-align:center;
+position:relative;
+
+}
+
+/* =========================
+CTA CARD
+========================= */
+
+.cta-inner{
+
+max-width:980px;
+margin:auto;
+
+background:#fff;
+
+padding:90px 40px;
+
+border-radius:16px;
+
+box-shadow:0 30px 80px rgba(0,0,0,0.12);
+
+/* 泡背景 */
+
+background-image:
+linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+url("../img/cta-bubble-decoration.png");
+
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+
+}
+
+.cta-lead{
+
+font-size:32px;
+color:#2f80c3;
+margin-bottom:10px;
+font-weight:600;
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:14px;
+
+}
+
+/* 左右ライン */
+
+.cta-lead::before,
+.cta-lead::after{
+
+content:"";
+width:40px;
+height:2px;
+
+background:#2f80c3;
+
+transform:skewX(-30deg);
+
+}
+
+.cta-title{
+
+font-size:58px;
+font-weight:900;
+margin-bottom:30px;
+
+}
+
+.cta-points{
+
+display:flex;
+justify-content:center;
+gap:24px;
+
+list-style:none;
+padding:0;
+margin:0 0 40px 0;
+
+}
+
+.cta-points li{
+
+font-size:24px;
+font-weight:600;
+
+display:flex;
+align-items:center;
+gap:8px;
+
+line-height:1.3;
+
+}
+
+.check{
+
+color:#2f80c3;
+font-weight:600;
+
+}
+
+/* =========================
+CTA MAIN BUTTON
+========================= */
+
+.cta-main-btn{
+
+display:inline-block;
+
+background:#2f80c3;
+color:#fff;
+
+font-size:28px;
+font-weight:700;
+
+padding:20px 72px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+border:none;
+box-shadow:none;
+
+line-height:1.4;
+
+transition:
+transform .2s ease,
+box-shadow .2s ease,
+background .2s ease;
+
+}
+
+/* hover */
+
+.cta-main-btn:hover{
+
+background:#2772ad;
+
+transform:translateY(-2px);
+
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+.cta-tel-text{
+
+margin-top:35px;
+font-size:26px;
+font-weight: 500;
+
+}
+
+.cta-tel{
+
+font-size:42px;
+font-weight:bold;
+margin-top:5px;
+
+}
+/* =========================
+FOOTER
+========================= */
+
+.footer{
+background:#7fc6fd;
+color:#fff;
+text-align:center;
+padding:20px;
+font-size:14px;
+}
+
+
+/* =========================
+JS FADE
+========================= */
+
+.js-fade{
+opacity:0;
+transform:translateY(30px);
+transition:opacity .8s ease, transform .8s ease;
+}
+
+.js-fade.is-visible{
+opacity:1;
+transform:translateY(0);
+}
+
+section{
+padding:80px 0;
+}
+
+body{
+overflow-x:hidden;
+}

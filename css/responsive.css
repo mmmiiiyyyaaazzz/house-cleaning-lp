@@ -1,0 +1,1044 @@
+.pc-only{
+display:block;
+}
+
+.sp-only{
+display:none;
+}
+
+@media (max-width:768px){
+
+.pc-only{
+display:none;
+}
+
+.sp-only{
+display:block;
+}
+
+}
+.sp-only{
+display:none;
+}
+
+@media (max-width:768px){
+
+.sp-only{
+display:block;
+}
+
+}
+
+
+
+/* =========================
+HEADER SP
+========================= */
+
+@media (max-width:768px){
+
+.header{
+padding:14px 16px;
+}
+
+.header .container{
+gap:6px;
+}
+
+/* ロゴ */
+.logo{
+font-size:16px;
+line-height:1.2;
+white-space:nowrap;
+}
+
+.logo-sub{
+display:block;
+margin-top:4px;
+margin-left:2px;
+
+font-size:12px;
+padding:4px 6px;
+width:fit-content;
+}
+
+/* 右側 */
+.header-right{
+gap:8px;
+}
+
+/* TEL非表示 */
+.header-tel{
+display:none;
+}
+
+/* CTA */
+.header-cta{
+font-size:13px;
+padding:10px 14px;
+white-space:nowrap;
+}
+
+}
+
+
+/* ===============================
+FV SP
+=============================== */
+
+@media (max-width:768px){
+
+.fv{
+padding:40px 16px 60px;
+background-position:45% center;
+}
+
+.fv-inner{
+padding:0 16px;
+}
+
+/* エリア */
+.fv-area{
+display:none;
+}
+
+/* キャッチ */
+
+.fv-catch-top{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.fv-catch-main{
+font-size:38px;
+}
+
+.fv-catch-accent{
+
+font-size:48px;
+
+background:linear-gradient(
+transparent 78%,
+#ffe600 78%
+);
+
+padding:0 6px;
+
+}
+
+/* リード */
+
+.fv-lead{
+font-size:16px;
+margin-top:16px;
+}
+
+/* ポイント */
+
+.fv-points{
+grid-template-columns:1fr;
+gap:12px;
+}
+
+.fv-points li{
+font-size:26px;
+padding-left:46px;
+}
+
+.fv-points strong{
+font-size:32px;
+top:0;
+}
+
+.fv-points li::before{
+width:20px;
+height:20px;
+font-size:14px;
+left:10px;
+}
+
+
+
+/* 価格 */
+
+.fv-price{
+font-size:50px;
+margin-top:20px;
+margin-bottom:18px;
+line-height:1.2;
+}
+
+.fv-price span{
+font-size:22px;
+}
+
+/* CTA */
+
+.cta-btn{
+display:block;
+margin:24px auto 0;
+text-align:center;
+}
+
+.fv-note{
+text-align:center;
+padding-left:0;
+font-size:15px;
+margin-top:14px;
+line-height:1.6;
+}
+
+}
+
+
+@media (max-width:768px){
+
+.problems{
+
+background-image:
+linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),
+url("../img/cleaning-bubble-bg-sp.png");
+
+background-size:100% auto;
+background-position:center top;
+background-repeat:repeat-y;
+
+}
+
+
+.problems h2{
+font-size:25px;
+margin-bottom:40px;
+}
+
+/* カード並び */
+
+.problem-list{
+gap:45px;
+}
+
+/* カード */
+
+.problem{
+width:100%;
+max-width:420px;
+margin:auto;
+text-align:center;
+}
+
+/* 吹き出し */
+
+.problem-balloon{
+display:inline-block;
+margin:0 0 12px;
+font-size:20px;
+padding:18px 20px;
+
+border-radius:28px;
+
+box-shadow:
+0 8px 18px rgba(0,0,0,0.08);
+text-align:left;
+
+}
+
+/* 番号 */
+
+.problem-no{
+font-size:18px;
+margin-bottom:4px;
+}
+
+/* 画像 */
+
+.problem-img{
+
+height:auto;
+
+border-radius:16px;
+
+overflow:hidden;
+
+box-shadow:
+0 12px 28px rgba(0,0,0,0.15);
+
+}
+
+.problem-img img{
+height:auto;
+display:block;
+}
+}
+
+
+/* =========================
+solution SP
+========================= */
+
+@media (max-width:768px){
+
+.solution{
+padding:60px 0;
+}
+
+.solution h2{
+font-size:26px;
+line-height:1.4;
+padding:0 20px;
+}
+
+.solution-lead{
+max-width: 340px;
+font-size:15px;
+margin:0 auto 40px;
+padding-left:14px;
+text-align: left;
+}
+
+
+/* カードリスト */
+
+.solution-list{
+grid-template-columns:1fr;
+gap:32px;
+padding:0 20px;
+}
+
+
+/* カード */
+
+.solution-item{
+padding:28px 22px;
+}
+
+
+.solution-item h3{
+font-size:20px;
+margin-bottom:12px;
+}
+
+
+.solution-item p{
+max-width:none;
+font-size:16px;
+padding-left:0;
+}
+
+}
+
+
+/* =========================
+REASON SP
+========================= */
+
+@media (max-width:768px){
+
+.reason{
+padding:80px 20px;
+}
+
+.reason h2{
+font-size:30px;
+margin-bottom:20px;
+}
+
+/* 青ブロック */
+
+.reason-inner{
+padding:40px 24px;
+}
+
+/* リード */
+
+.reason-lead{
+font-size:18px;
+text-align: left;
+max-width: 240px;
+margin: 0 auto 30px;
+}
+
+/* カードレイアウト */
+
+.reason-list{
+grid-template-columns:1fr;
+gap:18px;
+}
+
+/* カード */
+
+.reason-item{
+padding:18px 16px;
+gap:12px;
+}
+
+/* アイコン */
+
+.reason-item img{
+width:56px;
+}
+
+/* タイトル */
+
+.reason-item h3{
+font-size:20px;
+}
+
+/* 下テキスト */
+
+.reason-note{
+font-size:16px;
+max-width: 240px;
+text-align: left;
+margin: 30px auto 0;
+}
+
+}
+
+
+/* =========================
+services SP
+========================= */
+
+@media (max-width:768px){
+
+.services{
+padding:70px 20px;
+background-image:
+linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),
+url("../img/cleaning-bubble-bg-sp.png");
+
+background-size:100% auto;
+background-position:center top;
+background-repeat:repeat-y;
+}
+
+.services h2{
+font-size:28px;
+}
+
+.services-lead{
+font-size:16px;
+margin:14px 18px 40px 24px;
+line-height:1.7;
+max-width: 300px;
+text-align: left;
+}
+
+/* カード */
+
+.service-list{
+grid-template-columns:1fr;
+gap:22px;
+max-width:420px;
+}
+
+/* カード本体 */
+
+.service{
+padding:22px 18px;
+}
+
+/* アイコン */
+
+.service img{
+width:200px;
+margin:0 auto 14px;
+}
+
+/* タイトル */
+
+.service p{
+font-size:20px;
+}
+
+}
+
+
+/* =========================
+Before After SP
+========================= */
+
+@media (max-width:768px){
+
+.before-after{
+padding:70px 20px;
+background:#f7f9fc;
+}
+
+.before-after h2{
+font-size:28px;
+margin-bottom:36px;
+}
+
+.ba-item{
+margin-bottom:60px;
+}
+
+.ba-item h3{
+font-size:22px;
+margin-bottom:18px;
+}
+
+/* 画像レイアウト */
+
+.ba-images{
+flex-direction:column;
+gap:16px;
+}
+
+/* 矢印 */
+
+.ba-arrow{
+font-size:32px;
+transform:rotate(90deg);
+}
+
+/* 画像 */
+
+.ba-box img{
+max-width:100%;
+border-radius:10px;
+}
+
+/* ラベル */
+
+.ba-label{
+font-size:18px;
+padding:4px 10px;
+}
+
+/* 説明文 */
+
+.ba-text{
+font-size:16px;
+line-height:1.7;
+text-align: left;
+max-width: 280px;
+margin: 14px auto 0;
+}
+
+}
+
+
+/* =========================
+PRICE SP
+========================= */
+
+@media (max-width:768px){
+
+.price{
+padding:70px 0;
+background-image:
+linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),
+url("../img/cleaning-bubble-bg-sp.png");
+
+background-size:100% auto;
+background-position:center top;
+background-repeat:repeat-y;
+}
+
+.price h2{
+font-size:28px;
+margin-bottom:36px;
+}
+
+/* 料金カード */
+
+
+.price-list{
+max-width:360px;
+margin:0 auto;
+padding:0 12px;
+}
+
+
+/* 1行 */
+
+.price-list li{
+flex-direction:column;
+align-items:center;
+gap:6px;
+
+padding:22px 20px;
+
+font-size:26px;
+text-align:center;
+}
+
+/* 価格 */
+
+.price-list strong{
+font-size:34px;
+}
+
+}
+
+
+/* =========================
+FLOW SP
+========================= */
+
+@media (max-width:768px){
+
+.flow .inner{
+padding:0 16px;
+}
+
+.step{
+grid-template-columns:1fr;
+gap:10px;
+max-width:420px;
+margin:0;
+}
+
+/* アイコン＋タイトル横並び */
+
+.step-text{
+grid-row:2;
+grid-column:1;
+
+display:flex;
+flex-direction:column;
+margin-left:106px;
+gap: 4px;
+align-items:flex-start;
+}
+
+/* アイコン */
+
+.step img{
+grid-row:2;
+grid-column:1;
+width:80px;
+}
+
+
+/* タイトル */
+
+.step-title{
+font-size:30px;
+
+}
+
+/* サブ */
+
+.step-sub{
+display:block;
+margin-left:2px;
+font-size:14px;
+color:#777;
+}
+
+/* STEP */
+
+.step-num{
+font-size:18px;
+padding:6px 12px;
+margin-bottom:2px;
+}
+
+}
+
+
+@media (max-width:768px){
+
+.result{
+padding:70px 0;
+}
+
+/* 縦レイアウト */
+
+.result-box{
+grid-template-columns:1fr;
+gap:28px;
+max-width:420px;
+margin:40px auto 0;
+}
+
+.result img{
+max-width:340px;
+margin:0 auto;
+display:block;
+}
+
+/* 中央寄せ */
+
+.result-content{
+text-align:center;
+}
+
+
+/* リスト */
+
+.result-list{
+display:inline-block;
+text-align:left;
+margin-top:20px;
+}
+
+.result-list li::before{
+content:"✓";
+color:#ffd45c;
+font-weight:bold;
+}
+
+.result h2{
+font-size:30px;
+line-height:1.3;
+}
+
+.result-label{
+font-size:24px;
+opacity:0.9;
+}
+
+.result-num{
+font-size:52px;
+margin-bottom:18px;
+}
+
+}
+
+
+@media (max-width:768px){
+
+/* セクション余白 */
+
+.review{
+padding:80px 0;
+}
+
+/* 見出し */
+
+.review h2{
+font-size:28px;
+margin-bottom:40px;
+}
+
+/* 1カラム */
+
+.review-list{
+grid-template-columns:1fr;
+gap:26px;
+max-width:340px;
+margin:0 auto;
+}
+
+/* カード */
+
+.review-item{
+padding:24px 20px 10px;
+}
+
+/* 吹き出し */
+
+.review-bubble{
+padding:16px 12px;
+}
+
+/* 星 */
+
+.review-stars{
+font-size:18px;
+}
+
+/* アイコン */
+
+.review-user img{
+width:72px;
+height:72px;
+}
+
+/* 名前 */
+
+.review-name{
+font-size:16px;
+}
+
+}
+
+
+@media (max-width:768px){
+
+/* セクション余白 */
+
+.guarantee{
+padding:80px 20px;
+}
+
+/* 見出し */
+
+.guarantee h2{
+font-size:30px;
+}
+
+/* リード */
+
+.guarantee-lead{
+font-size:18px;
+margin-top:12px;
+margin-bottom:40px;
+line-height:1.6;
+text-align: left;
+max-width: 360px;
+margin: 12px auto 40px 6px;
+}
+
+/* 1カラム */
+
+.guarantee-list{
+grid-template-columns:1fr;
+gap:24px;
+max-width:380px;
+margin:40px auto 0;
+}
+
+/* カード */
+
+.guarantee-item{
+padding:28px 22px 26px;
+}
+
+/* アイコン */
+
+.guarantee-item img{
+width:80px;
+margin-bottom:16px;
+}
+
+/* タイトル */
+
+.guarantee-item h3{
+font-size:20px;
+}
+
+/* テキスト */
+
+.guarantee-item p{
+font-size:15px;
+line-height:1.6;
+text-align:left;
+}
+
+}
+
+
+@media (max-width:768px){
+
+/* 見出し */
+
+.faq h2{
+font-size:30px;
+margin-bottom:36px;
+}
+
+/* FAQ幅（読みやすく） */
+
+.faq-list{
+max-width:380px;
+margin:0 auto;
+}
+
+/* Q */
+
+.faq-question{
+font-size:18px;
+line-height:1.5;
+}
+
+/* A */
+
+.faq-answer{
+font-size:15px;
+line-height:1.7;
+}
+
+/* Q・Aアイコン */
+
+.faq-icon{
+width:34px;
+height:34px;
+font-size:16px;
+flex-shrink:0;
+}
+
+/* Q&Aブロック間 */
+
+.faq dl{
+margin-bottom:26px;
+padding: 40px 16px;
+}
+
+/* Q */
+
+.faq dt{
+font-size:18px;
+margin-bottom:16px;
+line-height:1.5;
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+/* A */
+
+.faq dd{
+font-size:15px;
+line-height:1.8;
+}
+
+.faq dt::before{
+top:50%;
+transform:translateY(-50%);
+}
+
+
+
+}
+
+
+@media (max-width:768px){
+
+/* セクション余白 */
+
+.area{
+padding:80px 20px;
+}
+
+/* 見出し */
+
+.area h2{
+font-size:28px;
+margin-bottom:36px;
+}
+
+/* 縦レイアウト */
+
+.area-content{
+grid-template-columns:1fr;
+gap:28px;
+max-width:380px;
+margin:0 auto;
+}
+
+/* タイトル */
+
+.area-title{
+font-size:22px;
+text-align:center;
+margin-bottom:16px;
+}
+
+/* MAP */
+
+.area-map img{
+max-width:340px;
+margin:0 auto;
+display:block;
+border:2px solid #e6eef5;
+box-shadow:
+0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* エリアタグ */
+
+.area-tags{
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+}
+
+.area-tags li{
+font-size:18px;
+padding:6px 10px;
+}
+
+/* NOTE */
+
+.area-note{
+font-size:12px;
+text-align:center;
+margin-top:8px;
+}
+
+}
+
+
+@media (max-width:768px){
+
+/* セクション余白 */
+
+.cta{
+padding:80px 20px;
+background-image:
+linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),
+url("../img/cleaning-bubble-bg-sp.png");
+
+background-size:100% auto;
+background-position:center top;
+background-repeat:repeat-y;
+}
+
+/* カード */
+
+.cta-inner{
+padding:50px 24px;
+max-width:380px;
+}
+
+/* リード */
+
+.cta-lead{
+font-size:20px;
+gap:10px;
+}
+
+.cta-lead::before,
+.cta-lead::after{
+width:24px;
+}
+
+/* タイトル */
+
+.cta-title{
+font-size:34px;
+margin-bottom:24px;
+line-height:1.3;
+}
+
+/* ポイント */
+
+.cta-points{
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+
+width:fit-content;
+margin:0 auto 30px;
+}
+
+.cta-points li{
+font-size:24px;
+justify-content:center;
+}
+
+/* ボタン */
+
+.cta-main-btn{
+font-size:20px;
+padding:20px 32px;
+width:100%;
+max-width:300px;
+}
+
+/* 電話 */
+
+.cta-tel-text{
+font-size:18px;
+margin-top:24px;
+}
+
+.cta-tel{
+font-size:28px;
+}
+
+}
