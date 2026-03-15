@@ -21,3 +21,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", function(e) {
+
+    const targetId = this.getAttribute("href");
+
+    if(targetId === "#") return;
+
+    const target = document.querySelector(targetId);
+
+    if(!target) return;
+
+    e.preventDefault();
+
+    window.scrollTo({
+      top: target.offsetTop - 80,
+      behavior: "smooth"
+    });
+
+  });
+});
